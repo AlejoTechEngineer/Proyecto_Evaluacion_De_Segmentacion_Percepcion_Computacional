@@ -19,6 +19,20 @@ Proyecto de desarrollo propio realizado por **Alejandro De Mendoza** como parte 
 
 ---
 
+## Arquitectura
+
+```mermaid
+flowchart TD
+    A[BSR_bsds500/ - Dataset BSDS500] --> B[Laboratorio2.ipynb]
+    A --> C[segmentacion_ground_truth.png]
+    A --> D[Imagenes/]
+    B --> E[Carga y Preprocesamiento de Imagenes]
+    E --> F[Algoritmos de Segmentacion]
+    F --> G[Evaluacion vs Ground Truth - segmentacion_ground_truth.png]
+    G --> H[Metricas de Segmentacion]
+    H --> I[Precision / Recall / F-measure]
+```
+
 ## Autor
 
 **Alejandro De Mendoza**  
